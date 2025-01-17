@@ -39,7 +39,7 @@ nav ul li a {
 .hero {
     height: 100vh;
     background: linear-gradient(rgba(0, 119, 182, 0.8), rgba(0, 119, 182, 0.8)),
-                url('../assets/hero-image.jpg') no-repeat center center/cover;
+                url('../assets/hero-background.jpg') no-repeat center center/cover;
     color: white;
     display: flex;
     align-items: center;
@@ -48,17 +48,43 @@ nav ul li a {
     padding: 20px;
 }
 
-.hero h1 {
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .hero-content {
+        flex-direction: row;
+    }
+}
+
+.profile-pic {
+    width: 200px; /* Increase the width */
+    height: 200px; /* Increase the height */
+    border-radius: 50%; /* Keeps it circular */
+    border: 6px solid white; /* Slightly thicker border for balance */
+    object-fit: cover; /* Ensures the image scales well inside the circle */
+}
+
+.hero-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.hero-text h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
-.hero p {
+.hero-text p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
 }
 
-.hero a {
+.cta-buttons .btn {
     padding: 10px 20px;
     margin: 10px;
     border: 2px solid white;
@@ -68,16 +94,7 @@ nav ul li a {
     transition: 0.3s;
 }
 
-.hero a:hover {
+.cta-buttons .btn:hover {
     background: white;
     color: #0077b6;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 1rem;
-    background: #0077b6;
-    color: white;
-    margin-top: 20px;
 }
