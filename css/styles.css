@@ -42,10 +42,10 @@ nav ul li a {
                 url('../assets/hero-background.jpg') no-repeat center center/cover;
     color: white;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     text-align: center;
-    padding: 20px;
+    padding: 155px;
 }
 
 .hero-content {
@@ -62,11 +62,12 @@ nav ul li a {
 }
 
 .profile-pic {
-    width: 200px; /* Increase the width */
-    height: 200px; /* Increase the height */
-    border-radius: 50%; /* Keeps it circular */
-    border: 6px solid white; /* Slightly thicker border for balance */
-    object-fit: cover; /* Ensures the image scales well inside the circle */
+    width: 500px; 
+    height: 500px; 
+    border-radius: 50%; 
+    border: 6px solid white; 
+    object-fit: cover;
+    margin-right: 30px; 
 }
 
 .hero-text {
