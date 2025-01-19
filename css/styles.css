@@ -99,3 +99,20 @@ nav ul li a {
     background: white;
     color: #0077b6;
 }
+
+.social-media {
+    margin-top: 40px; 
+    text-align: left; 
+}
+
+.social-media a {
+    margin-right: 15px; 
+    color: white; 
+    font-size: 2rem; 
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+}
+
+.social-media a:hover {
+    color: #005f8c; 
+}
