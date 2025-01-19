@@ -5,11 +5,22 @@
     box-sizing: border-box;
 }
 
-body {
+/* Home Page */
+.page-home {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f9;
+    background-color: rgba(0, 119, 182, 0.8);
+    color: white;
+    min-height: 100vh;
+}
+
+/* About Page */
+.page-about {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: white; 
     color: #333;
+    min-height: 100vh;
 }
 
 /* Navbar */
@@ -35,12 +46,20 @@ nav ul li a {
     font-weight: bold;
 }
 
+/* Footer */
+.footer-home {
+    color: white;
+    padding-left: 8.5px;
+}
+
+.footer-about {
+    color: #333;
+    padding-left: 8.5px;
+}
+
 /* Hero Section */
 .hero {
-    height: 100vh;
-    background: linear-gradient(rgba(0, 119, 182, 0.8), rgba(0, 119, 182, 0.8)),
-                url('../assets/hero-background.jpg') no-repeat center center/cover;
-    color: white;
+    height: 91vh;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -61,13 +80,13 @@ nav ul li a {
     }
 }
 
-.profile-pic {
+.page-home .profile-pic {
     width: 500px; 
     height: 500px; 
     border-radius: 50%; 
-    border: 6px solid white; 
     object-fit: cover;
-    margin-right: 30px; 
+    margin-right: 30px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25); 
 }
 
 .hero-text {
@@ -115,4 +134,64 @@ nav ul li a {
 
 .social-media a:hover {
     color: #005f8c; 
+}
+
+/* About Section */
+.about {
+    height: 91vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 20px; 
+}
+
+@media (min-width: 768px) {
+    .about-content {
+        flex-direction: row; 
+    }
+}
+
+.page-about .profile-pic {
+    width: 500px;
+    height: 700px;
+    border-radius: 0; 
+    object-fit: cover; 
+    margin-right: 80px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.gvsu-logo {
+    position: absolute; 
+    top: 55%; 
+    right: 8%;
+    transform: translate(-50%, -50%); 
+    width: 500px; 
+    height: auto; 
+    opacity: 0.1; 
+    pointer-events: none;
+}
+
+.about-text {
+    max-width: 600px;
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.about-text h1 {
+    font-size: 2.5rem;
+    color: #0077b6; 
+    margin-bottom: 1rem;
+}
+
+.about-text p {
+    margin-bottom: 1rem;
 }
