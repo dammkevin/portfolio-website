@@ -23,6 +23,15 @@
     min-height: 100vh;
 }
 
+/* Project Page */
+.page-projects {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: white; 
+    color: #333;
+    min-height: 100vh;
+}
+
 /* Navbar */
 nav {
     background: #0077b6;
@@ -53,6 +62,11 @@ nav ul li a {
 }
 
 .footer-about {
+    color: #333;
+    padding-left: 8.5px;
+}
+
+.footer-projects {
     color: #333;
     padding-left: 8.5px;
 }
@@ -194,4 +208,79 @@ nav ul li a {
 
 .about-text p {
     margin-bottom: 1rem;
+}
+
+/* Projects Section */
+.projects {
+    height: 91vh;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.projects h1 {
+    font-size: 2.5rem;
+    color: #0077b6;
+    margin-bottom: 20px;
+}
+
+.projects .intro {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.project-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+.project-card h2 {
+    font-size: 1.5rem;
+    color: #0077b6;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.project-card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #0077b6;
+    color: #0077b6;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.project-card .btn:hover {
+    background: #0077b6;
+    color: white;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
 }
