@@ -97,7 +97,7 @@ nav ul li a {
 .footer-contact {
     color: #333;
     padding-left: 8.5px;
-    padding-top: 148px;
+    padding-top: 49px;
 }
 
 /* Hero Section */
@@ -441,6 +441,22 @@ nav ul li a {
     color: #555;
     margin-bottom: 30px;
     line-height: 1.8;
+}
+
+.contact-info {
+    margin-bottom: 30px; 
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.contact-info a {
+    color: #0077b6; 
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
 }
 
 /* Contact Form */
