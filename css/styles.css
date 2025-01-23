@@ -41,6 +41,15 @@
     min-height: 100vh;
 }
 
+/* Contact Page */
+.page-contact {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: white; 
+    color: #333;
+    min-height: 100vh;
+}
+
 /* Navbar */
 nav {
     background: #0077b6;
@@ -83,6 +92,12 @@ nav ul li a {
 .footer-resume {
     color: #333;
     padding-left: 8.5px;
+}
+
+.footer-contact {
+    color: #333;
+    padding-left: 8.5px;
+    padding-top: 148px;
 }
 
 /* Hero Section */
@@ -398,4 +413,86 @@ nav ul li a {
 .btn-resume:hover {
     background-color: #005f8c;
     transform: scale(1.1); 
+}
+
+/* Contact Section */
+.contact-wrapper {
+    margin-top: 50px;
+}
+
+.contact {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact h1 {
+    font-size: 2.5rem;
+    color: #0077b6;
+    margin-bottom: 20px;
+}
+
+.contact .intro {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+/* Contact Form */
+.contact-form {
+    text-align: left;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+    border-color: #0077b6;
+    box-shadow: 0 0 5px rgba(0, 119, 182, 0.5);
+}
+
+.contact-form textarea {
+    resize: none;
+    font-family: Arial, sans-serif;
+}
+
+.btn-contact {
+    display: inline-block;
+    background-color: #0077b6;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-contact:hover {
+    background-color: #005f8c;
+    transform: scale(1.05);
 }
