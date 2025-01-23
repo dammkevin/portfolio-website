@@ -32,6 +32,15 @@
     min-height: 100vh;
 }
 
+/* Resume Page */
+.page-resume {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: white; 
+    color: #333;
+    min-height: 100vh;
+}
+
 /* Navbar */
 nav {
     background: #0077b6;
@@ -67,6 +76,11 @@ nav ul li a {
 }
 
 .footer-projects {
+    color: #333;
+    padding-left: 8.5px;
+}
+
+.footer-resume {
     color: #333;
     padding-left: 8.5px;
 }
@@ -264,7 +278,7 @@ nav ul li a {
     margin-bottom: 20px;
 }
 
-.project-card .btn {
+.project-card .btn-projects {
     display: inline-block;
     padding: 10px 20px;
     border: 2px solid #0077b6;
@@ -275,7 +289,7 @@ nav ul li a {
     transition: background 0.3s ease, color 0.3s ease;
 }
 
-.project-card .btn:hover {
+.project-card .btn-projects:hover {
     background: #0077b6;
     color: white;
 }
@@ -283,4 +297,105 @@ nav ul li a {
 .project-card:hover {
     transform: translateY(-10px);
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Resume Section */
+.resume-wrapper {
+    margin-top: 50px;
+}
+
+.resume {
+    height: 204vh;
+    max-width: 1100px; 
+    margin: 0 auto; 
+    padding: 30px 20px; 
+    background-color: #f9f9f9; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+}
+
+.resume h1 {
+    font-size: 2.8rem;
+    color: #0077b6;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 2px solid #0077b6; 
+    padding-bottom: 10px;
+}
+
+.resume .intro {
+    font-size: 1.3rem;
+    color: #555;
+    margin-bottom: 50px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.resume-section {
+    margin-bottom: 50px; 
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.resume-section h2 {
+    font-size: 2.2rem;
+    color: #0077b6;
+    margin-bottom: 20px;
+    text-align: center; 
+    border-bottom: 1px solid #ddd; 
+    padding-bottom: 10px;
+}
+
+.resume-section ul {
+    list-style: none; 
+    padding: 0;
+}
+
+.resume-section ul li {
+    margin-bottom: 15px;
+    line-height: 1.8;
+    color: #333; 
+    font-size: 1.1rem;
+}
+
+.resume-section ul li strong {
+    font-weight: bold;
+    color: #0077b6; 
+}
+
+.resume-section ul li em {
+    font-style: italic;
+    color: #555; 
+}
+
+.resume-section ul li ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.resume-section ul li ul li {
+    list-style: disc; 
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Button for Resume Download */
+.btn-resume {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #0077b6;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+.btn-resume:hover {
+    background-color: #005f8c;
+    transform: scale(1.1); 
 }
